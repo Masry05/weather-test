@@ -29,7 +29,7 @@ async function getCurrentWeather() {
     navigator.geolocation.getCurrentPosition(function (position) {
       lat = position.coords.latitude;
       lon = position.coords.longitude;
-      const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${lon}`;
+      const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${lon}`;
       
       fetch(apiUrl)
         .then((response) => response.json())
