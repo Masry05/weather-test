@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(20, 19, 19);
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+        
+        .temp{
+            color:white;
+            margin-top: 30px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="button" onclick="getCurrentWeather()">Weather</button>
+        <div class="temp"></div>
+        <div id="test"></div>
+    </div>
+    <script src="api.js"></script>
+</body>
+</html>
