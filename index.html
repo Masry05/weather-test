@@ -11,14 +11,15 @@
             margin: 0;
             padding: 0;
             background-color: rgb(20, 19, 19);
+            height: 100vh;
         }
         
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             flex-direction: column;
+            margin-top: 100px;
         }
 
         .button {
@@ -36,7 +37,7 @@
             background-color: #0056b3;
         }
         
-        .temp{
+        .temp,.location{
             color:white;
             margin-top: 30px;
             width: 100px;
@@ -51,7 +52,7 @@
     <div class="container">
         <button class="button" onclick="getCurrentWeather()">Weather</button>
         <div class="temp"></div>
-        <div id="test"></div>
+        <div class="location"></div>
     </div>
     <script src="api.js"></script>
 </body>
